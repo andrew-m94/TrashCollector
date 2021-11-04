@@ -7,5 +7,7 @@ from . import views
 app_name = "employees"
 urlpatterns = [
     path('', views.index, name="index"),
-    path('create/', views.create, name="create")
+    path('create/', views.create, name="create"),
+    path('edit/', views.edit, name="edit"),
+    path('employee_base', views.employee_base, name="employee_base")
 ]
